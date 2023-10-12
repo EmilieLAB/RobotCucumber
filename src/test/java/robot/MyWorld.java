@@ -1,5 +1,7 @@
 package robot;
 
+import java.awt.*;
+
 public class MyWorld {
     private Robot robot;
     private Battery batterie;

@@ -45,12 +45,17 @@ public class RobotFixture {
     @And("^le robot se déplace en coordonnée \\((\\d+), (\\d+)\\)$")
     public void leRobotSeDeplace(int x, int y) throws Throwable {
         world.getRobot().computeRoadTo(new Coordinates(x, y));
-        world.getRobot().letsGo();
+        try {
+            world.getRobot().letsGo();
+        } catch (InsufficientChargeException ice){
+
+        }
+
     }
 
     @And("^le robot ne fait rien pendant (\\d+) secondes$")
     public void leRobotNeFaitRien(int duree) throws Throwable {
-        // TODO
+        world.getBattery().recharger(duree);
     }
 
     @Then("^les coordonnées du robot sont \\((\\d+), (\\d+)\\)$")
