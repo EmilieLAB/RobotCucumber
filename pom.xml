@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>RobotCucumber</artifactId>
+    <artifactId>ELARobotCucumber</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>fr.test.formation</groupId>
-            <artifactId>RobotComplet</artifactId>
+            <artifactId>ELARobotComplet</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
